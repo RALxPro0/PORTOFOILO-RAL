@@ -1,4 +1,4 @@
-// Elemen yang dipakai bersama di semua halaman
+
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const darkToggle = document.querySelector(".dark-toggle");
@@ -7,7 +7,6 @@ const themeLabel = document.querySelector(".theme-label");
 const currentTime = document.getElementById("currentTime");
 const currentYear = document.getElementById("currentYear");
 
-// Fitur 1: jam digital real-time dan tahun otomatis
 function tampilkanJam() {
     const sekarang = new Date();
 
@@ -28,7 +27,7 @@ function tampilkanJam() {
 tampilkanJam();
 setInterval(tampilkanJam, 1000);
 
-// Fitur 2: menu hamburger untuk layar kecil
+
 function tutupMenu() {
     navLinks.classList.remove("open");
     hamburger.classList.remove("active");
@@ -60,7 +59,6 @@ window.addEventListener("resize", function () {
     }
 });
 
-// Fitur 3: mode gelap, pilihan disimpan agar tetap sama di semua halaman
 function perbaruiTombolTema(isDark) {
     themeIcon.textContent = isDark ? "☀" : "☾";
     themeLabel.textContent = isDark ? "Light Mode" : "Dark Mode";
@@ -74,7 +72,7 @@ try {
         perbaruiTombolTema(true);
     }
 } catch (e) {
-    // localStorage tidak tersedia, abaikan
+    
 }
 
 darkToggle.addEventListener("click", function () {
@@ -84,11 +82,11 @@ darkToggle.addEventListener("click", function () {
     try {
         localStorage.setItem("tema", isDark ? "dark" : "light");
     } catch (e) {
-        // abaikan
+
     }
 });
 
-// Fitur 4: tombol kembali ke atas, muncul setelah digulir
+
 const toTop = document.getElementById("toTop");
 
 if (toTop) {
@@ -101,14 +99,13 @@ if (toTop) {
     });
 }
 
-// Fitur 5: validasi formulir kontak (hanya ada di kontak.html)
+
 const form = document.getElementById("contactForm");
 
 if (form) {
     const pesan = document.getElementById("pesan");
     const hitung = document.getElementById("pesanCount");
 
-    // Penghitung karakter saat mengetik
     pesan.addEventListener("input", function () {
         hitung.textContent = "(" + pesan.value.length + "/300)";
     });
