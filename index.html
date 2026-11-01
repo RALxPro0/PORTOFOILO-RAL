@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portofolio Reza Abdul Latif, mahasiswa Teknologi Informasi yang tertarik pada web development, data analysis, dan desain.">
+    <title>Portofolio | Reza Abdul Latif</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo">Portofolio<span></span></a>
+
+        <nav class="nav-links" id="navLinks" aria-label="Navigasi utama">
+            <a href="index.html" class="active" aria-current="page">Beranda</a>
+            <a href="tentang.html">Tentang</a>
+            <a href="minat.html">Minat</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="dark-toggle" type="button" aria-label="Aktifkan mode gelap" aria-pressed="false">
+                <span class="theme-icon" aria-hidden="true">☾</span>
+                <span class="theme-label">Dark Mode</span>
+            </button>
+
+            <button class="hamburger" type="button" aria-label="Buka menu" aria-controls="navLinks" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="hero" id="beranda">
+            <div class="hero-content">
+                <p class="eyebrow">HALO, SELAMAT DATANG</p>
+                <h1>Full-Stack <span>Developer</span></h1>
+                <p class="hero-description">
+                    Menggabungkan kemampuan Front-End dan Back-End
+                    untuk membangun aplikasi web yang fungsional,
+                    menarik, dan mudah digunakan.
+                </p>
+                <a href="tentang.html" class="button-primary">Kenali Saya <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
+
+        <section class="skills section-padding">
+            <div class="section-heading">
+                <p class="eyebrow">JELAJAHI</p>
+                <h2>Lihat Lebih Lanjut</h2>
+            </div>
+
+            <div class="card-container">
+                <article class="card">
+                    <span class="card-number">01 | TENTANG</span>
+                    <h3>Tentang Saya</h3>
+                    <p>Latar belakang, tujuan karier, dan hal yang saya pelajari.</p>
+                    <a class="card-link" href="tentang.html">Baca selengkapnya →</a>
+                </article>
+                <article class="card">
+                    <span class="card-number">02 | MINAT</span>
+                    <h3>Minat dan Kompetensi</h3>
+                    <p>Teknologi, inklusivitas, bahasa isyarat, dan riset.</p>
+                    <a class="card-link" href="minat.html">Lihat minat →</a>
+                </article>
+                <article class="card">
+                    <span class="card-number">03 | KONTAK</span>
+                    <h3>Hubungi Saya</h3>
+                    <p>Punya pertanyaan atau ajakan kolaborasi? Kirim pesan.</p>
+                    <a class="card-link" href="kontak.html">Kirim pesan →</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-info">
+            <a href="index.html" class="logo">RAL<span>.</span></a>
+            <p>Membangun teknologi yang inklusif dan bermakna.</p>
+        </div>
+
+        <div class="footer-contact">
+            <p class="footer-label">HUBUNGI SAYA</p>
+            <a href="mailto:Rezaabdullatif50@gmail.com">Rezaabdullatif50@gmail.com</a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Reza Abdul Latif.</p>
+            <p id="currentTime" aria-live="off"></p>
+        </div>
+    </footer>
+
+    <button class="to-top" id="toTop" type="button" aria-label="Kembali ke atas" hidden>↑</button>
+</body>
+</html>

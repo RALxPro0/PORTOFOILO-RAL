@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portofolio Reza Abdul Latif, mahasiswa Teknologi Informasi yang tertarik pada web development, data analysis, dan desain.">
+    <title>Tentang | Reza Abdul Latif</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo">Portofolio<span></span></a>
+
+        <nav class="nav-links" id="navLinks" aria-label="Navigasi utama">
+            <a href="index.html">Beranda</a>
+            <a href="tentang.html" class="active" aria-current="page">Tentang</a>
+            <a href="minat.html">Minat</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="dark-toggle" type="button" aria-label="Aktifkan mode gelap" aria-pressed="false">
+                <span class="theme-icon" aria-hidden="true">☾</span>
+                <span class="theme-label">Dark Mode</span>
+            </button>
+
+            <button class="hamburger" type="button" aria-label="Buka menu" aria-controls="navLinks" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="about section-padding" id="tentang">
+            <div class="section-heading">
+                <p class="eyebrow">TENTANG SAYA</p>
+                <h1>Mengenal Lebih Dekat</h1>
+            </div>
+
+            <div class="about-content">
+                <div class="about-highlight">
+                    <span class="about-number">01</span>
+                    <h3>Belajar, Berkembang, Berdampak.</h3>
+                    <p>
+                        Teknologi bukan hanya tentang kode,
+                        tetapi juga tentang menciptakan solusi
+                        yang bermanfaat bagi banyak orang.
+                    </p>
+                </div>
+
+                <div class="about-description">
+                    <p>
+                        Saya Reza Abdul Latif, mahasiswa Program Studi
+                        Teknologi Informasi di Universitas Brawijaya.
+                        Saya senang mempelajari hal baru dan terbuka
+                        terhadap berbagai pengalaman.
+                    </p>
+                    <p>
+                        Saya memiliki ketertarikan pada teknologi,
+                        desain, pengembangan web, dan analisis data.
+                        Saya ingin menerapkan ilmu yang dipelajari
+                        untuk menyelesaikan masalah nyata.
+                    </p>
+                    <p>
+                        Ke depannya, saya ingin mengembangkan karier
+                        di bidang Data Analyst atau Data Scientist,
+                        sambil terus meningkatkan kemampuan teknis,
+                        kreativitas, dan kolaborasi.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-info">
+            <a href="index.html" class="logo">RAL<span>.</span></a>
+            <p>Membangun teknologi yang inklusif dan bermakna.</p>
+        </div>
+
+        <div class="footer-contact">
+            <p class="footer-label">HUBUNGI SAYA</p>
+            <a href="mailto:Rezaabdullatif50@gmail.com">Rezaabdullatif50@gmail.com</a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Reza Abdul Latif.</p>
+            <p id="currentTime" aria-live="off"></p>
+        </div>
+    </footer>
+
+    <button class="to-top" id="toTop" type="button" aria-label="Kembali ke atas" hidden>↑</button>
+</body>
+</html>
